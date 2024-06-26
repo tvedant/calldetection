@@ -1,0 +1,56 @@
+<html><head><title>
+
+    validation form 
+
+</title>
+</head>
+<style>
+    h1{
+        transform:rotate(90deg);
+        
+    }
+</style>
+<body>
+
+      
+    <h1> please fill the </h1>
+        username: <input type="text" id="uname">
+        password: <input type="password" id="pssd">
+        mobile:   <input type="text" id="mob">
+        <input type="submit" id="sub" value="click to submit">
+
+    
+    
+    
+    
+    </form>
+    <script>
+       
+        function validate(){
+
+
+
+            let a= document.querySelector("#uname").value;
+        let b=document.querySelector("#pssd").value;
+        let c=document.querySelector("#mob").value;
+        const regex= /^[6-9]\d{9}$/;
+
+            if(a==""||b==""||c==""){
+                alert("all fields are mandatory")
+                return false
+            }
+            else if(isNaN(c)){
+                alert("only numbers are allowed")
+            }
+            else if(!c.match(regex)){
+                alert("invalid format")
+            }
+            else{
+                return true
+            }
+        }
+    </script>
+    <iframe src="https://www.youtube.com/embed/1oaXWFMJhgM?si=48vJzbKnXrUByYWL" height="25%" widht="25%"> ye chamak ye damak </iframe>
+    <iframe src="https://www.youtube.com/embed/IgyYfuG1ELs?si=V_atayzN4-KWzwd4" height="50%"  width="30%"></iframe>
+</body>
+</html>
